@@ -9,3 +9,13 @@ $(document).ready(function(){
     });
 
 });
+
+function changeShoe(color){
+    if(color=='black'){
+        document.getElementById('shoe').src="img/shoe1.png"
+    }else if(color=='white'){
+        document.getElementById('shoe').src="img/shoe2.png"
+    }else{
+        document.getElementById('shoe').src="img/shoe3.png"
+    }
+}
