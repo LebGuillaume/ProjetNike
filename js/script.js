@@ -15,10 +15,20 @@ menu.hover(function () {
 })
 function changeShoe(color){
     if(color=='black'){
+        $('.shoe3d').hide()
+        $('.shoemodel').show()
         document.getElementById('shoe').src="img/shoe1.png"
     }else if(color=='white'){
+        $('.shoe3d').hide()
+        $('.shoemodel').show()
         document.getElementById('shoe').src="img/shoe2.png"
-    }else{
+    }else if(color=='purple'){
+        $('.shoe3d').hide()
+        $('.shoemodel').show()
         document.getElementById('shoe').src="img/shoe3.png"
+    }else{
+        $('.shoemodel').hide()
+        $('.shoe3d').show()
+
     }
 }
