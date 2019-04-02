@@ -9,10 +9,13 @@ $(document).ready(function(){
     });
 
 });
-let menu = $('#menu');
-menu.hover(function () {
-    $('#link1').visibility='visible';
-})
+function Dropdown(){
+
+        document.getElementById('nav').style.visibility='visible';
+        document.getElementById('nav-shop').style.visibility='visible';
+
+
+}
 function changeShoe(color){
     if(color=='black'){
         $('.shoe3d').hide()

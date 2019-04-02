@@ -57,7 +57,7 @@ body {
       grid-column: 6;
       font-size: 1.6rem;
       align-self: center;
-      justify-self: center; }
+      justify-self: center;z-index: 10}
       .site .header #menu i {
         margin-right: 5px; }
     .site .header #icone {
@@ -287,15 +287,16 @@ body {
 .size-card{
   margin-top:50px;
 }
-<<<<<<< HEAD
+
 .link2{
 
 }
-nav{
+#nav{
 grid-column: 6;
 grid-row: 2;
 z-index: 2;
   justify-self: center;
+  visibility: hidden;
 }
 nav >div{
   text-align: center;
@@ -312,18 +313,20 @@ nav> div >a {
 
 #link1{
 transition-duration: 0.2s;
-  visibility: hidden;
+
+  z-index:10;
 }
+
 #link2{
   transition-duration: 0.4s;
 
-  visibility: hidden;
+
 }
 #link3{
   transition-duration: 0.6s;
-  visibility: hidden;
+
 }
-=======
+
 
 .links{
   grid-row: 2;
@@ -387,4 +390,172 @@ margin:100px auto;
   font-size:18px;
 }
 
->>>>>>> 1141ad10a21574bdacf5bb15b2719112c27e7ad6
+
+#register{
+  background-image: url("../img/imgform.png");
+  background-size: cover;
+}
+
+/*dropdown*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #212121;
+}
+
+
+
+#ddmm {
+  color: #FAFAFA;;
+  grid-column: 6;
+  grid-row: 1;
+
+justify-self: center;
+  align-self: center;
+  z-index: 10;
+
+
+}
+
+#ddmm ul,
+#ddmm ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#ddmm ul li {
+  display: inline-block;
+  position: relative;
+  perspective: 1000px;
+  perspective-origin: top left;
+
+}
+
+#ddmm ul li:hover {
+  background-color: #424242;
+
+
+
+}
+
+#ddmm ul li a {
+  display: inline-block;
+  padding:25px 105px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+#ddmm ul li > ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #212121;
+}
+
+#ddmm ul li > ul li {
+  display: block;
+  perspective: 1000px;
+  perspective-origin: top left;
+}
+
+#ddmm ul li > ul li a {
+  width: 100%;
+  white-space: nowrap;
+}
+
+#ddmm ul li > ul li > ul {
+  display: none;
+  top: 0;
+  left: 100%;
+}
+
+#ddmm ul li:hover > ul,
+#ddmm ul li > ul li:hover > ul {
+  display: block;
+  transform-origin: top center;
+  animation-name: ddmm_animate;
+  animation-duration: 400ms;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ddmm_animate {
+  from {
+    opacity: 0;
+    transform: translateY(15px) rotateY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateY(0);
+  }
+}
+
+@media (max-width: 720px) {
+
+  #ddmm ul li {
+    display: block;
+  }
+
+  #ddmm ul li a {
+    display: block;
+  }
+
+  #ddmm ul li > ul {
+    position: relative;
+  }
+
+  #ddmm ul li > ul,
+  #ddmm ul li > ul li > ul {
+    top: 0;
+    left: 0;
+  }
+
+  #ddmm ul li > ul li a:hover {
+    text-decoration: underline;
+  }
+
+  #ddmm ul li:hover > ul,
+  #ddmm ul li > ul li:hover > ul {
+    margin-left: 30px;
+    background-color: #424242;
+    animation-name: ddmm_animate__mobile;
+  }
+
+}
+
+@keyframes ddmm_animate__mobile {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 640px) {
+  #ddmm{
+    display: none;
+  }
+  #icone{
+    display: none;
+  }
+  #card{
+    display:none;
+  }
+}
