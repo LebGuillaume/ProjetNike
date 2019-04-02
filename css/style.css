@@ -171,6 +171,11 @@ body {
       font-family: 'manrope-reg',sans-serif;
       color: white; }
 
+
+article p{
+  font-family: 'anton';
+}
+
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -391,6 +396,7 @@ margin:100px auto;
 }
 
 
+
 #register{
   background-image: url("../img/imgform.png");
   background-size: cover;
@@ -558,4 +564,22 @@ justify-self: center;
   #card{
     display:none;
   }
+}
+
+#black1{
+  background-color:black;
+  width:821px;
+  height:50px;
+  position:absolute;
+  z-index:99;
+
+}
+
+#black2{
+  background-color:black;
+  width:821px;
+  height:50px;
+  position:absolute;
+  z-index:999;
+  bottom:205px;
 }
