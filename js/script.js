@@ -9,7 +9,10 @@ $(document).ready(function(){
     });
 
 });
-
+let menu = $('#menu');
+menu.hover(function () {
+    $('#link1').visibility='visible';
+})
 function changeShoe(color){
     if(color=='black'){
         document.getElementById('shoe').src="img/shoe1.png"

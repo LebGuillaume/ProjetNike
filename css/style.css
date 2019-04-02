@@ -16,7 +16,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: black;
-  font-family: 'Helvetica',sans-serif; }
+  font-family: 'manrope-bold',sans-serif; }
 
 .site {
   display: grid;
@@ -46,7 +46,7 @@ body {
       justify-self: center;
       text-transform: uppercase; }
     .site .header #menu {
-      font-family: 'Helvetica Light',sans-serif;
+      font-family: 'manrope-reg',sans-serif;
       grid-column: 6;
       font-size: 1.6rem;
       align-self: center;
@@ -161,7 +161,7 @@ body {
     color: white;
     font-size: 1.5rem; }
     .form input::placeholder {
-      font-family: 'Helvetica',sans-serif;
+      font-family: 'manrope-reg',sans-serif;
       color: white; }
 
 .main {
@@ -269,4 +269,39 @@ body {
 
 .size-card{
   margin-top:50px;
+}
+.link2{
+
+}
+nav{
+grid-column: 6;
+grid-row: 2;
+z-index: 2;
+  justify-self: center;
+}
+nav >div{
+  text-align: center;
+
+}
+nav> div >a {
+ text-decoration:none ;
+  color:white;
+  font-family: 'manrope-bold',sans-serif;
+  font-size:1.6em;
+
+}
+
+
+#link1{
+transition-duration: 0.2s;
+  visibility: hidden;
+}
+#link2{
+  transition-duration: 0.4s;
+
+  visibility: hidden;
+}
+#link3{
+  transition-duration: 0.6s;
+  visibility: hidden;
 }
