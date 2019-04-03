@@ -17,31 +17,36 @@ function Dropdown() {
 
 
 }
-let imgSrc=$('#shoe').attr('src')
+var imgSrc=$('#shoe').attr('src')
 function changeShoe(color) {
     if (color === 'black') {
 
         $('.shoe3d').hide()
         $('.shoemodel').fadeIn(600);
+
+
         $('#shoe').attr('src', 'img/shoe1.png')
         imgSrc=$('#shoe').attr('src')
-        $('.img_cart').attr('src',imgSrc);
+
+        // $('.img_cart').attr('src',imgSrc);
 
     } else if (color === 'white') {
 
         $('.shoe3d').hide()
         $('.shoemodel').fadeIn(600);
+
         $('#shoe').attr('src', 'img/shoe2.png')
         imgSrc=$('#shoe').attr('src')
-        $('.img_cart').attr('src',imgSrc);
+        //$('.img_cart').attr('src',imgSrc);
 
     } else if (color === 'purple') {
 
         $('.shoe3d').hide();
         $('.shoemodel').fadeIn(600);
+
         $('#shoe').attr('src', 'img/shoe3.png')
         imgSrc=$('#shoe').attr('src')
-        $('.img_cart').attr('src',imgSrc);
+        //$('.img_cart').attr('src',imgSrc);
 
     } else {
         $('.shoemodel').hide();
@@ -87,7 +92,9 @@ function addProduct(e) {
     $('.js-cart-empty').addClass('hide');
     var product = $('.js-cart-product-template').html();
     $('.js-cart-products').prepend(product);
-
+    let img =$('.img_cart');
+    $('.img_cart:first').attr('src',imgSrc);
+    console.log( $('.img_cart img :last '));
 
 
 
@@ -102,12 +109,3 @@ function removeProduct(e) {
         $('.js-cart-empty').removeClass('hide');
     }
 }
-/*function zoom() {
-    if($('#shoe').hasClass("img_zoom") )
-    {
-        $('#shoe').removeClass('img_zoom');
-
-    }
-    else{$('#shoe').addClass('img_zoom');}
-
-}*/
