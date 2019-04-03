@@ -27,6 +27,7 @@
         <div id="link4"><a href=""></a></div>
         <div id="link5"><a href=""></a></div>
     </nav>
+
     <header class="header">
         <a id='logo' href=""><img src="img/Nike-Logo-PNG.png" alt=""></a>
 
@@ -38,7 +39,7 @@
                 <li>
                     <a  href="javascript:void(0)">Menu </a>
                     <ul>
-                        <li><a href="about.html">about</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="shop.html">Shop</a></li>
                         <li><a href="register.html">Login </a></li>
                         <li><a href="page2.html">Sign in </a></li>
@@ -48,7 +49,48 @@
 
             </ul>
         </nav>
-        <a id="card" href="#">card</a>
+        <section id="card" class="shop">
+            <div class="shop__header">
+                <p class="shop__text">
+                    <a class="button js-toggle-cart" href="#" title="View cart">
+                        cart
+                    </a>
+                </p>
+            </div>
+        </section>
+        <aside class="cart js-cart">
+            <div class="cart__header">
+                <h1 class="cart__title">Shopping cart</h1>
+                <p class="cart__text">
+                    <a id ="red_button" class="button button--light js-toggle-cart" href="#" title="Close cart">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </p>
+            </div>
+            <div class="cart__products js-cart-products">
+                <p class="cart__empty js-cart-empty">
+                    Add a product to your cart
+                </p>
+                <div class="cart__product js-cart-product-template">
+                    <article class="js-cart-product">
+                        <h1>Product title</h1>
+                        <p>
+                            <a class="js-remove-product" href="#" title="Delete product">
+                                Delete product
+                            </a>
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <div class="cart__footer">
+                <p class="cart__text">
+                    <a id="black_button" class="button" href="#" title="Buy products">
+                        Buy products
+                    </a>
+                </p>
+            </div>
+        </aside>
+        <div class="lightbox js-lightbox js-toggle-cart"></div>
 
 
     </header>

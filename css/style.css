@@ -75,7 +75,9 @@ body {
     font-size: 6.5rem;
     letter-spacing: 40px;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;justify-self: center;
+    align-self: center;
+  }
   .site span {
     color: red; }
   .site .footer {
@@ -732,4 +734,16 @@ body.open .lightbox {
   width: 100%;
   opacity: 0.8;
   transition: opacity 250ms ease-in-out, width 0ms ease-in-out;
+}
+#black_button{
+  color:black;
+  font-size:1.5em;
+}
+#red_remove{
+  color:black;
+  font-size:1.2em;
+}
+#red_remove:hover{
+  color: red;
+  font-size:1.2em;
 }
