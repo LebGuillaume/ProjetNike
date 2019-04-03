@@ -231,7 +231,7 @@ article p{
 
 #shoe{
 
-transition-duration: 0.6s;
+
 }
 
 #model1{
@@ -746,4 +746,12 @@ body.open .lightbox {
 #red_remove:hover{
   color: red;
   font-size:1.2em;
+}
+.img_zoom{
+  position: absolute;
+
+
+  top: 25%;left: 25%;
+    transform: scale(2,2);
+
 }

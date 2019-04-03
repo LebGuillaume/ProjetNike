@@ -23,18 +23,14 @@ function changeShoe(color) {
 
         $('.shoe3d').hide()
         $('.shoemodel').fadeIn(600);
-
-
         $('#shoe').attr('src', 'img/shoe1.png')
         imgSrc=$('#shoe').attr('src')
-
         $('.img_cart').attr('src',imgSrc);
 
     } else if (color === 'white') {
 
         $('.shoe3d').hide()
         $('.shoemodel').fadeIn(600);
-
         $('#shoe').attr('src', 'img/shoe2.png')
         imgSrc=$('#shoe').attr('src')
         $('.img_cart').attr('src',imgSrc);
@@ -43,7 +39,6 @@ function changeShoe(color) {
 
         $('.shoe3d').hide();
         $('.shoemodel').fadeIn(600);
-
         $('#shoe').attr('src', 'img/shoe3.png')
         imgSrc=$('#shoe').attr('src')
         $('.img_cart').attr('src',imgSrc);
@@ -92,7 +87,7 @@ function addProduct(e) {
     $('.js-cart-empty').addClass('hide');
     var product = $('.js-cart-product-template').html();
     $('.js-cart-products').prepend(product);
-    let img =$('.img_cart')
+
 
 
 
@@ -107,3 +102,12 @@ function removeProduct(e) {
         $('.js-cart-empty').removeClass('hide');
     }
 }
+/*function zoom() {
+    if($('#shoe').hasClass("img_zoom") )
+    {
+        $('#shoe').removeClass('img_zoom');
+
+    }
+    else{$('#shoe').addClass('img_zoom');}
+
+}*/
